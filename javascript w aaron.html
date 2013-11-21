@@ -1,0 +1,178 @@
+<html>
+<head>
+  <title>Javascript Bare</title>
+ 
+
+</head>
+<body>
+<!-- 	<a href="http://google.com" id="google-link">Click me</a>
+ -->
+<!-- 
+<label>Ow! (x<span id="poke-count">0</span>)</label>
+<input id="poke" type="submit" />
+ -->
+<button id="my-button">button</button>
+
+ <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script type="text/javascript">
+
+
+
+
+
+// $('#my-button').on('click', function () {
+//   alert('ouch... *cough cough*');
+// });
+
+
+
+
+// setTimeout(function () {
+//   alert('Stop alerting yourself');
+// }, 1000);
+
+
+
+
+// var greet = function () { alert('hi'); };
+// setTimeout(greet, 2000);
+
+
+
+
+// var yell = function(string){
+// 	return string.toUpperCase();
+// }
+
+// var ask = function(question){
+// 	return "Can you please " + question + "?";
+// }
+
+// var serveMessage = function(name, command, func){
+// 	return name + ": " + func(command);
+// }
+
+
+// var ex1 = yell('what?');
+// console.log('Ex1 should be "WHAT?!":', ex1);
+
+// var ex2 = ask('open the door');
+// console.log('Ex2 should be "Can you please open the door?":', ex2);
+
+// var ex3 = serveMessage('Bob','call me', ask);
+// console.log('Ex3 should be "Bob: Can you please call me?":', ex3);
+
+// var ex4 = serveMessage('Bob','call me', yell);
+// console.log('Ex4 should be "Bob: CALL ME!":', ex4);
+
+
+
+var result = function(name, command, func){
+	return name + ": " + func(command);
+}('Bob','call me', function(question){
+	return "Can you please " + question + "?";
+});
+console.log(result);
+
+result = function(name, command, func){
+	return name + ": " + func(command);
+}('Bob','call me', function(string){
+	return string.toUpperCase();
+})
+console.log(result);
+
+
+
+
+
+// var logTime = function (time) {
+//   console.log('The current time is:', time);
+// };
+// var alertTime = function (time) {
+//   alert('The current time is: ' + time);
+// };
+
+// // Before you get started, run this in your console to see how logTime works:
+// // var now = new Date();
+// // logTime(now);
+// // alertTime(now);
+
+// var serveTime = function(func){
+// 	func(new Date());
+// }
+
+// serveTime(logTime); // This should log the current time
+// serveTime(alertTime); // This should alert the current time
+
+// var displayData = function (alertDataFunc, logDataFunc, data) {
+//   alertDataFunc(data);
+//   logDataFunc(data);
+// }
+
+// var logData = function(data){
+// 	console.log(data);
+// 	}
+
+// displayData(alert, logData, "IMPORTANT MESSAGE: I like your shirt.");
+
+
+
+
+// var serve = function (x) {
+//   x();
+// };
+// var greet = function () {
+//   alert('hi');
+// };
+// serve(greet);
+
+
+
+
+// var punch = function () {
+//   alert('POWA!');
+// };
+// var kick = function () {
+//   alert('KIA!');
+// }
+
+// var doubleUp = function(func){
+// 	func();
+// 	func();
+// }
+
+// doubleUp(punch); // This should alert twice
+// doubleUp(kick); // This should alert twice
+
+
+
+
+
+
+
+
+
+// TWO
+// var click = 0;
+// var counter = function(){
+// 	return click++;
+// }
+
+// $("#poke").on('click', function (e){
+// 	counter();
+// 	$("#poke-count").text(click);
+// });
+
+
+// ONE
+// $("#google-link").on('click', function (e) {
+// 	e.preventDefault();
+// 	alert("NO google for you!");
+// });
+
+
+
+</script>
+
+</body>
+</html>
